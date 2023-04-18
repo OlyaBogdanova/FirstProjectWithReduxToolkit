@@ -10,6 +10,7 @@ function App() {
     const todos = useSelector(state => state.counter.todos)
     const dispatch = useDispatch()
 
+
     function changeInput(e) {
         setTodo(e.target.value)
     }
@@ -19,7 +20,7 @@ function App() {
             dispatch(addTodo(todo))
             setTodo('')
         } else{
-            alert('Длина сообщения должна быть больше нуля!')
+            alert( 'Длина сообщения должна быть больше нуля!')
         }
 
     }
