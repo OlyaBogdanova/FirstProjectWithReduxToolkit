@@ -15,6 +15,7 @@ function App() {
         setTodo(e.target.value)
     }
 
+
     function addTodoAndCleanInput() {
         if(todo.length>0){
             dispatch(addTodo(todo))
